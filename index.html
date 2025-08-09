@@ -12,6 +12,7 @@
             <div class="logo">Portfolio</div>
             <ul class="nav-links">
                 <li><a href="#about">Tentang</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
                 <li><a href="#projects">Proyek</a></li>
                 <li><a href="#contact">Kontak</a></li>
             </ul>
@@ -23,7 +24,7 @@
             <div class="container">
                 <h1>Wildan Abid Al Hanif</h1>
                 <p>Tertarik pada Machine Learning, Deep Learning, dan Natural Language Processing</p>
-                <a href="#about" class="cta-button">Pelajari Lebih Lanjut</a>
+                <a href="#experience" class="cta-button">Pelajari Lebih Lanjut</a>
             </div>
         </section>
 
@@ -52,7 +53,77 @@
             </div>
         </section>
 
-        <section id="projects" class="section-gray">
+        <section id="experience" class="section-gray">
+            <div class="container">
+                <h2 class="section-title">Pengalaman</h2>
+                <div class="experience-timeline">
+                    <div class="experience-item">
+                        <div class="experience-date">
+                            <span class="year">2024</span>
+                            <span class="duration">Sekarang</span>
+                        </div>
+                        <div class="experience-content">
+                            <div class="experience-icon">🎓</div>
+                            <h3 class="experience-title">Mahasiswa - Machine Learning</h3>
+                            <p class="experience-company">Universitas/Institusi</p>
+                            <p class="experience-description">
+                                Fokus pada pembelajaran Machine Learning, Deep Learning, dan Natural Language Processing. 
+                                Aktif dalam penelitian dan pengembangan proyek-proyek AI.
+                            </p>
+                            <div class="experience-skills">
+                                <span class="exp-skill">Python</span>
+                                <span class="exp-skill">TensorFlow</span>
+                                <span class="exp-skill">Research</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-date">
+                            <span class="year">2023</span>
+                            <span class="duration">6 bulan</span>
+                        </div>
+                        <div class="experience-content">
+                            <div class="experience-icon">✍️</div>
+                            <h3 class="experience-title">Technical Writer</h3>
+                            <p class="experience-company">Medium Platform</p>
+                            <p class="experience-description">
+                                Menulis artikel teknis tentang Machine Learning dan Deep Learning. 
+                                Berbagi pengetahuan dan tutorial implementasi berbagai algoritma AI.
+                            </p>
+                            <div class="experience-skills">
+                                <span class="exp-skill">Technical Writing</span>
+                                <span class="exp-skill">Content Creation</span>
+                                <span class="exp-skill">AI Education</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-date">
+                            <span class="year">2023</span>
+                            <span class="duration">3 bulan</span>
+                        </div>
+                        <div class="experience-content">
+                            <div class="experience-icon">🔬</div>
+                            <h3 class="experience-title">Data Science Intern</h3>
+                            <p class="experience-company">Perusahaan/Startup</p>
+                            <p class="experience-description">
+                                Mengembangkan model machine learning untuk analisis data bisnis. 
+                                Melakukan preprocessing data dan implementasi algoritma prediksi.
+                            </p>
+                            <div class="experience-skills">
+                                <span class="exp-skill">Data Analysis</span>
+                                <span class="exp-skill">Scikit-learn</span>
+                                <span class="exp-skill">Data Visualization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-white">
             <div class="container">
                 <h2 class="section-title">Proyek Saya</h2>
                 <div class="projects-grid">
@@ -181,7 +252,7 @@
         }, observerOptions);
 
         // Observe elements for animation
-        document.querySelectorAll('.project-card, .about-content, .contact-content').forEach(el => {
+        document.querySelectorAll('.project-card, .about-content, .contact-content, .experience-item').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(20px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
