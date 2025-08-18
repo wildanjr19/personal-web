@@ -409,6 +409,173 @@
             background: #1a202c;
         }
 
+        /* Working On Section */
+        .working-on-content {
+            text-align: center;
+        }
+
+        .working-on-description {
+            font-size: 1.1rem;
+            color: #a0aec0;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .repos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .repo-card {
+            background: #4a5568;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            border: 1px solid #2d3748;
+        }
+
+        .repo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            border-color: #4fd1c7;
+        }
+
+        .repo-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .repo-icon {
+            font-size: 1.5rem;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #81e6d9, #4fd1c7);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .repo-info {
+            flex: 1;
+        }
+
+        .repo-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin: 0 0 0.25rem 0;
+        }
+
+        .repo-visibility {
+            font-size: 0.8rem;
+            color: #a0aec0;
+            margin: 0;
+        }
+
+        .repo-stars {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            color: #ffd700;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+
+        .star-icon {
+            font-size: 1rem;
+        }
+
+        .star-count {
+            color: #a0aec0;
+            font-weight: 500;
+        }
+
+        .repo-description {
+            color: #a0aec0;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .repo-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+        }
+
+        .repo-language {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #a0aec0;
+        }
+
+        .language-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .language-dot.python {
+            background: #3776ab;
+        }
+
+        .language-dot.jupyter {
+            background: #f37626;
+        }
+
+        .language-dot.html {
+            background: #e34c26;
+        }
+
+        .repo-updated {
+            color: #718096;
+            font-size: 0.8rem;
+        }
+
+        .repo-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .repo-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(129, 230, 217, 0.1);
+            color: #81e6d9;
+            text-decoration: none;
+            border-radius: 6px;
+            border: 1px solid rgba(129, 230, 217, 0.3);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .repo-link:hover {
+            background: rgba(129, 230, 217, 0.2);
+            border-color: #4fd1c7;
+            transform: translateY(-1px);
+        }
+
+        .repo-link-icon {
+            width: 16px;
+            height: 16px;
+            object-fit: contain;
+        }
+
         /* Contact Section */
         .contact-content {
             text-align: center;
@@ -564,5 +731,36 @@
             .contact-logo {
                 width: 20px;
                 height: 20px;
+            }
+
+            /* Working On responsive */
+            .repos-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .repo-header {
+                gap: 0.75rem;
+            }
+
+            .repo-icon {
+                width: 35px;
+                height: 35px;
+                font-size: 1.2rem;
+            }
+
+            .repo-name {
+                font-size: 1.1rem;
+            }
+
+            .repo-footer {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: flex-start;
+            }
+
+            .working-on-description {
+                font-size: 1rem;
+                margin-bottom: 2rem;
             }
         }
