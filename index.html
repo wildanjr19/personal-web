@@ -14,6 +14,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Project</a></li>
+                <li><a href="#working-on">Working On</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -134,6 +135,108 @@
             </div>
         </section>
 
+        <!-- Working On Section -->
+        <section id="working-on" class="section-gray">
+            <div class="container">
+                <h2 class="section-title">Currently Working On</h2>
+                <div class="working-on-content">
+                    <p class="working-on-description">Here are some repositories I'm actively developing and contributing to:</p>
+                    
+                    <div class="repos-grid">
+                        <div class="repo-card">
+                            <div class="repo-header">
+                                <div class="repo-icon">📊</div>
+                                <div class="repo-info">
+                                    <h3 class="repo-name">transformers-from-scratch</h3>
+                                    <p class="repo-visibility">Public</p>
+                                </div>
+                                <div class="repo-stars">
+                                    <span class="star-icon">⭐</span>
+                                    <span class="star-count">0</span>
+                                </div>
+                            </div>
+                            <p class="repo-description">
+                                Implementing Transformers from Attention is All You Need paper, focusing on understanding the architecture and training process.
+                            </p>
+                            <div class="repo-footer">
+                                <div class="repo-language">
+                                    <span class="language-dot python"></span>
+                                    <span>Python</span>
+                                </div>
+                                <div class="repo-updated">Active</div>
+                            </div>
+                            <div class="repo-links">
+                                <a href="https://github.com/wildanjr19/transformers-from-scratch" class="repo-link" target="_blank">
+                                    <img src="img/github.png" alt="GitHub" class="repo-link-icon">
+                                    View Repository
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="repo-card">
+                            <div class="repo-header">
+                                <div class="repo-icon">🤖</div>
+                                <div class="repo-info">
+                                    <h3 class="repo-name">generative-model</h3>
+                                    <p class="repo-visibility">Public</p>
+                                </div>
+                                <div class="repo-stars">
+                                    <span class="star-icon">⭐</span>
+                                    <span class="star-count">0</span>
+                                </div>
+                            </div>
+                            <p class="repo-description">
+                                Implementing famous and modern Generative Model in Deep Learning.
+                            </p>
+                            <div class="repo-footer">
+                                <div class="repo-language">
+                                    <span class="language-dot python"></span>
+                                    <span>Python</span>
+                                </div>
+                                <div class="repo-updated">Active</div>
+                            </div>
+                            <div class="repo-links">
+                                <a href="https://github.com/wildanjr19/generative-model" class="repo-link" target="_blank">
+                                    <img src="img/github.png" alt="GitHub" class="repo-link-icon">
+                                    View Repository
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="repo-card">
+                            <div class="repo-header">
+                                <div class="repo-icon">📈</div>
+                                <div class="repo-info">
+                                    <h3 class="repo-name">leetcode-solving</h3>
+                                    <p class="repo-visibility">Public</p>
+                                </div>
+                                <div class="repo-stars">
+                                    <span class="star-icon">⭐</span>
+                                    <span class="star-count">0</span>
+                                </div>
+                            </div>
+                            <p class="repo-description">
+                                Solving leetcode problems to improve algorithmic skills and understanding of data structures. Mostly in Pandas and Python
+                            </p>
+                            <div class="repo-footer">
+                                <div class="repo-language">
+                                    <span class="language-dot python"></span>
+                                    <span>Python</span>
+                                </div>
+                                <div class="repo-updated">Updated 1 week ago</div>
+                            </div>
+                            <div class="repo-links">
+                                <a href="https://github.com/wildanjr19/leetcode-solving" class="repo-link" target="_blank">
+                                    <img src="img/github.png" alt="GitHub" class="repo-link-icon">
+                                    View Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="contact" class="section-white">
             <div class="container">
                 <h2 class="section-title">Lets Connect!</h2>
@@ -169,7 +272,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Wildan</p>
+            <p>&copy; 2025 Wildan | Powered by Claude</p>
         </div>
     </footer>
 
@@ -216,7 +319,7 @@
         }, observerOptions);
 
         // Observe elements for animation
-        document.querySelectorAll('.project-card, .about-content, .contact-content, .experience-item').forEach(el => {
+        document.querySelectorAll('.project-card, .about-content, .contact-content, .experience-item, .repo-card').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(20px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
